@@ -14,7 +14,14 @@ public class DiceGame {
         int die2 = rand.nextInt(6) + 1;
         System.out.println("Die 2: " + die2);
 
-        System.out.println("Total Value: " + (die1 + die2));
+        int total = die1 + die2;
+
+        System.out.println("Total Value: " + total);
+        if (total > 7 ){
+            System.out.println("You won!");
+        }else {
+            System.out.println("You lost");
+        }
 
     }
 
